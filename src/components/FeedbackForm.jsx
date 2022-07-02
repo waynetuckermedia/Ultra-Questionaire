@@ -32,8 +32,7 @@ function FeedbackForm() {
                 rating,
             }
             console.log(newFeedback)
-        }
-        
+        }   
     }
 
   return (
