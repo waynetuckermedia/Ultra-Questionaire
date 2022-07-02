@@ -24,10 +24,21 @@ function FeedbackForm() {
 
         setText(e.target.value)
     }
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        if(text.trim().length > 10) {
+            const newFeedback = {
+                text,
+                rating,
+            }
+            console.log(newFeedback)
+        }
+        
+    }
 
   return (
     <Card>
-       <form>
+       <form onSubmit={handleSubmit}>
         <h2>How would you rate your service with us?</h2>
        </form>
        <RatingSelect select={(rating) => setRating(rating)} />
