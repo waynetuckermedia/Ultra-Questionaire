@@ -1,3 +1,4 @@
+import {} from 'framer-motion'
 import PropTypes from 'prop-types'
 import FeedbackItem from "./FeedbackItem"
 
